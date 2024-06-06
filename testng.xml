@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite Login">
+    <parameter name="URL" value="https://qa-challenge.ensolvers.com"></parameter>
+    <parameter name="validUsername" value="user"></parameter>
+    <parameter name="validPassword" value="user"></parameter>
+    <parameter name="invalidUsername" value="MariJimenez"></parameter>
+    <parameter name="invalidPassword" value="ThisIsNotAPassword1"></parameter>
+    <test name="PrincipalTest">
+        <classes>
+            <class name="LoginTest"/>
+            <class name="ManageFoldersTest"/>
+            <class name="ManageToDoItemsTest"/>
+        </classes>
+    </test>
+</suite>
